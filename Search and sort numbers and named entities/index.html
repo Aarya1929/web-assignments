@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Searching and Sorting Arrays</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Search and Sort Arrays</h1>
+
+        <!-- Integer Array -->
+        <div class="mb-4">
+            <h3>Integer Array</h3>
+            <input type="text" id="intArray" class="form-control" placeholder="Enter integers separated by commas">
+            <button id="sortIntArray" class="btn btn-primary mt-2">Sort Integer Array</button>
+            <button id="searchIntArray" class="btn btn-secondary mt-2">Search Integer Array</button>
+            <input type="number" id="searchInt" class="form-control mt-2" placeholder="Enter integer to search">
+            <div id="intArrayResult" class="mt-2"></div>
+        </div>
+
+        <!-- Named Entities Array -->
+        <div class="mb-4">
+            <h3>Named Entities Array</h3>
+            <input type="text" id="namedEntitiesArray" class="form-control"
+                placeholder="Enter names separated by commas">
+            <button id="sortNamedEntitiesArray" class="btn btn-primary mt-2">Sort Named Entities Array</button>
+            <button id="searchNamedEntitiesArray" class="btn btn-secondary mt-2">Search Named Entities Array</button>
+            <input type="text" id="searchName" class="form-control mt-2" placeholder="Enter name to search">
+            <div id="namedEntitiesArrayResult" class="mt-2"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

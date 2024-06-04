@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Course Details</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <nav class="navbar navbar-expand-md navbar-dark ">
+    <a class="navbar-brand">Course Details</a>
+    <img src="vit.png" alt="Logo" width="80" height="80" class="d-inline-block align-top">
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#sdp">SDP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#edi">EDI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#dt">DT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cp">CP</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container content">
+
+    <div id="course_details" class="subject-info">
+      <h2>Course Details</h2>
+      <p>Vision of the Institution</p>
+      <blockquote>
+        "To be globally acclaimed Institute in Technical Education and Research for holistic Socio-economic
+        development".
+      </blockquote>
+
+      <p>Mission of the Institution</p>
+      <ul>
+        <li>To ensure that 100% students are employable and employed in Industry, Higher Studies, become Entrepreneurs,
+          Civil / Defense Services / Govt. Jobs and other areas like Sports and Theatre.</li>
+        <li>To strengthen Academic Practices in terms of Curriculum, Pedagogy, Assessment and Faculty Competence.</li>
+        <li>Promote Research Culture among Students and Faculty through Projects and Consultancy.</li>
+        <li>To make students Socially Responsible Citizens.</li>
+      </ul>
+    </div>
+
+    <div id="sdp" class="subject-info">
+      <h2>SDP</h2>
+      <p>
+        <b>Course Relevance:</b> <br>
+        Software Engineering, rooted in both Computer Science and Computer Engineering, offers two perspectives:
+        Computer Science-first or Software Engineering-first. It encompasses the entire software lifecycle, aiming to
+        create high-quality, reliable programs systematically. This involves using formal methods for specification,
+        analysis, design, and evaluation. It demands scalable software development techniques, meeting timing, size, and
+        security criteria within project budgets and deadlines. The field draws on analytical and descriptive tools from
+        Computer Science and the rigor of Computer Engineering, ensuring trustworthiness in the systems developed by
+        collaborative teams.
+      </p>
+
+    </div>
+
+    <div id="dt" class="subject-info">
+      <h2>Design Thinking</h2>
+      <p>
+        <b>Course Relevance:</b> <br>Course Prerequisites: Problem Based Learning, Project Centric Learning
+        <br><b> Course Objective</b>:
+        To provide ecosystem for students and faculty for paper publication and patent filing.<br>
+        <b>Course Outcome</b>:The student will be able to<br>
+        1. Understand the importance of doing Research<br>
+        2. Interpret and distinguish different fundamental terms related to Research<br>
+        3. Apply the methodology of doing research and mode of its publication<br>
+        4. Write a Research Paper based on project work<br>
+        5. Understand Intellectual property rights<br>
+        6. Use the concepts of Ethics in Research<br>
+        7. Understand the Entrepreneurship and Business Planning
+      </p>
+
+    </div>
+
+    <div id="cp" class="subject-info">
+      <h2>Course Projects</h2>
+      <p>
+        <b>Course Relevance:</b> <br>On successful completion of this course, students will be able to:<br>
+        1. Identify skills and capabilities that intersect effectively with the needs of industry.<br>
+        2. Apply and practice good communication skills in the workplace setting.<br>
+        3. Reflect and evaluate on experiences that might lead to future employment.<br>
+        4. Report research findings in written and verbal forms.<br>
+        5. Demonstrate and apply research skills to complete a project.<br>
+        6. Apply the theoretical concepts to solve industrial problems with teamwork and
+        multidisciplinary approach.
+      </p>
+
+    </div>
+
+    <div id="edi" class="subject-info">
+      <h2>Engineering Design and Innovation</h2>
+      <p>
+        <br><b>Course Relevance:</b> <br>
+        Project Centric Learning (PCL) empowers students by allowing them to explore their interests and strengths. In
+        addition to regular coursework, it introduces semester-long Engineering Design and Development courses to
+        address real-world issues within domains like healthcare, agriculture, defense, and more. Students supplement
+        their knowledge with online courses and faculty guidance, preparing them for a project-driven world. PCL fosters
+        active, inquiry-based learning, transforming teachers into mentors. It engages students in tackling complex,
+        open-ended questions and challenges, promoting higher-order thinking skills, moving beyond knowledge acquisition
+        to analysis, design, and application, aligning with Bloom's Taxonomy categories. PCL equips students for success
+        in a project-centric society.
+      </p>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Set initial visibility: show course_details and hide other sections
+        $('#course_details').show();
+        $('.subject-info').not('#course_details').hide();
+
+        // Event handler for navbar link clicks
+        $('.navbar-nav a').on('click', function (event) {
+          event.preventDefault();
+
+          // Hide course details and other sections
+          $('#course_details').hide();
+          $('.subject-info').hide();
+
+          // Get the target section ID from the link's href attribute
+          var targetSectionId = $(this).attr('href');
+
+          // Show the target section
+          $(targetSectionId).show();
+        });
+      });
+
+    </script>
+
+</body>
+
+</html>

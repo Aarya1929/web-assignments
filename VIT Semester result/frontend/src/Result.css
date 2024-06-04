@@ -1,0 +1,89 @@
+/* Container that covers the full height of the viewport and centers the form */
+.result-container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center the form container horizontally */
+    align-items: center;
+    /* Center the form container vertically */
+    background-color: #007bff;
+    /* Primary Bootstrap color */
+}
+
+/* Form container */
+.form-container {
+    background-color: white;
+    /* White background for form container */
+    padding: 30px;
+    /* Increase padding for better spacing */
+    border-radius: 10px;
+    /* Rounded corners */
+    width: 400px;
+    /* Fixed width of the form container */
+    text-align: center;
+    /* Center text in the form container */
+}
+
+/* Style for the heading */
+.form-container h2 {
+    text-align: center;
+    /* Center the heading text */
+    margin-bottom: 20px;
+    /* Add space below the heading */
+}
+
+/* Style for form labels */
+.form-container label {
+    font-weight: bold;
+    /* Make the labels bold */
+    display: block;
+    /* Display each label as a block element */
+    margin-bottom: 5px;
+    /* Add margin below each label */
+    text-align: left;
+    /* Align text to the left */
+    width: 100%;
+    /* Make labels take the full width */
+}
+
+/* Style for form inputs */
+.form-container input {
+    width: 100%;
+    /* Make inputs take the full width */
+    padding: 8px;
+    /* Add padding for better spacing */
+    border-radius: 0;
+    /* No rounding on inputs */
+    margin-bottom: 15px;
+    /* Add margin below each input */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    text-align: left;
+    /* Align text to the left */
+}
+
+/* Style for the submit button */
+.form-container button {
+    width: 100%;
+    /* Make the button take the full width */
+    padding: 10px;
+    /* Add padding for space */
+    border-radius: 0;
+    /* No rounding on button */
+    background-color: #28a745;
+    /* Bootstrap success color */
+    color: white;
+    /* White text on the button */
+    font-weight: bold;
+    /* Bold text */
+    border: none;
+    /* No border on the button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+/* Add hover effect to the button */
+.form-container button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}

@@ -1,0 +1,39 @@
+ body {
+   font-family: "Times New Roman";
+ }
+
+ .navbar {
+   background-color: navy;
+ }
+
+ .subject-info {
+   display: none;
+   background-color: aliceblue;
+   padding: 20px;
+ }
+
+ .active {
+   display: block;
+ }
+
+ .container {
+   margin-top: 40px;
+ }
+
+ #video-background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+ }
+
+ video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+   position: absolute;
+ }
